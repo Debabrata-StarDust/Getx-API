@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-     // initialBinding: HomeBinding(),
-      debugShowCheckedModeBanner: false,
-        title:AppString.fetchData ,
+        // initialBinding: HomeBinding(),
+        debugShowCheckedModeBanner: false,
+        title: AppString.fetchData,
         theme: ThemeData(
-         primarySwatch:AppColors.purpleColor ,
+          primarySwatch: AppColors.purpleColor,
         ),
         home: Homescreen());
   }

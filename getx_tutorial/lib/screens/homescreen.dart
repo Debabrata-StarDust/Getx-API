@@ -7,7 +7,7 @@ import 'package:getx_tutorial/common/app_Colors.dart';
 import 'package:getx_tutorial/controller/homepage_controller.dart';
 import 'package:getx_tutorial/model/product_json_model.dart';
 
-class Homescreen extends GetView <HomepageController> {
+class Homescreen extends GetView<HomepageController> {
 //  final HomepageController homepageController = Get.put(HomepageController());
   Homescreen({super.key});
 
@@ -46,9 +46,10 @@ class Homescreen extends GetView <HomepageController> {
                             ),
                           ),
                         ),
-                        // Container(
-                        //   child:controller. ,
-                        // )
+                        Container(
+                          child: Text(
+                              controller.productList[index].name.toString()),
+                        )
                       ],
                     )
                   ],
